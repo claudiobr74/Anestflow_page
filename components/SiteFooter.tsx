@@ -1,0 +1,2 @@
+import Link from "next/link";
+export default function SiteFooter(){return <footer className="footer"><div className="container footerIn"><div><strong className="footerBrand">AnestFlow</strong><p>Fluxo anestésico digital para uma prática mais organizada.</p></div><div className="footerLinks"><Link href="/produto">Produto</Link><Link href="/recursos">Recursos</Link><Link href="/seguranca">Segurança</Link><Link href="/instituicoes">Instituições</Link><Link href="/contato">Contato</Link><Link href="/privacidade">Privacidade</Link></div></div></footer>}
