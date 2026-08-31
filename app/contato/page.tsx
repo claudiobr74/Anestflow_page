@@ -1,0 +1,4 @@
+import SiteHeader from "@/components/SiteHeader";
+import SiteFooter from "@/components/SiteFooter";
+import Link from "next/link";
+export default function Contato(){const external=process.env.NEXT_PUBLIC_CONTACT_URL;return <main><SiteHeader/><section className="contact"><div className="narrow"><p className="eyebrow">CONTATO</p><h1>Conheça o AnestFlow no contexto da sua prática.</h1><p>O site está preparado para receber um canal comercial configurável no Vercel pela variável <code>NEXT_PUBLIC_CONTACT_URL</code>.</p>{external?<a className="btn" href={external}>Entrar em contato</a>:<div className="notice"><strong>Canal de contato ainda não configurado.</strong><p>Enquanto isso, explore o produto e os recursos clínicos.</p><div className="actions"><Link className="btn" href="/produto">Ver produto</Link><Link className="btn ghost" href="/recursos">Ver recursos</Link></div></div>}</div></section><SiteFooter/></main>}
